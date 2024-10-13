@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMEN-GOGS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 3px solid;
+            border-image: linear-gradient(to right, green, yellow, red) 1;
+            animation: glow 2s infinite;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            margin: 10px 0;
+            color: #000;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        .button {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 1.1em;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+            transition: transform 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        .subscribe { background-color: #ff0000; }
+        .like { background-color: #008000; }
+        .join { background-color: #0000ff; }
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .images img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #333;
+        }
+        .contact {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            display: inline-block;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px yellow; }
+            50% { box-shadow: 0 0 30px red; }
+            100% { box-shadow: 0 0 10px green; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.2em; }
+            .button { font-size: 1em; }
+            .contact {
+                font-size: 1.1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 1.5em; }
+            h2 { font-size: 1em; }
+            .button {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+            .contact {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>AMEN-GOGS</h1>
+        <h2>Your Platform for Tutorials, Research, and Global Collaboration</h2>
+
+        <div class="button-container">
+            <button class="button subscribe">Subscribe</button>
+            <button class="button like">Like</button>
+            <button class="button join">Join</button>
+        </div>
+
+        <div class="images">
+            <img src="https://th.bing.com/th/id/OIP.nAElYAqNOlaPVRmxueDC8AHaHo?&rs=1&pid=ImgDetMain" alt="Image 1">
+            <img src="https://img.freepik.com/free-photo/side-view-doctors-posing_23-2148453492.jpg?t=st=1728843017~exp=1728846617~hmac=80c7b7c96f414340e046ae726195f952335a38d6568544de0e214f281615fccf&w=360" alt="Image 2">
+            <img src="https://th.bing.com/th/id/OIP.qA7USEx-ziGS6RKlQKC8lgHaNK?&rs=1&pid=ImgDetMain" alt="Image 3">
+        </div>
+
+        <p>Stay connected with us through our YouTube and Telegram channels, explore our content and join us!</p>
+
+        <div class="contact">
+            <a href="tel:+251918203416">+251918203416</a>
+            <a href="mailto:assefacn@gmail.com">assefacn@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+</html>
